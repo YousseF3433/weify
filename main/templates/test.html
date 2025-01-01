@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter with Animation</title>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <style>
+        /* CSS Styling */
+
+        /* General container styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Button styles */
+        .button-group {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #f6f6eb;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .button.active {
+            background-color: #ffa500; /* Orangy color for active button */
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #ffa500;
+            color: white;
+        }
+
+        /* Gallery styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .item.is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item p {
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Filter Buttons -->
+        <div class="button-group">
+            <button class="button active" data-filter="*">All</button>
+            <button class="button" data-filter=".category1">Category 1</button>
+            <button class="button" data-filter=".category2">Category 2</button>
+            <button class="button" data-filter=".category3">Category 3</button>
+        </div>
+
+        <!-- Gallery Items -->
+        <div class="gallery">
+            <!-- Category 1 Items -->
+            <div class="item category1">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+1" alt="Image 1">
+                <p>Category 1 - Item 1</p>
+            </div>
+            <div class="item category1">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+2" alt="Image 2">
+                <p>Category 1 - Item 2</p>
+            </div>
+
+            <!-- Category 2 Items -->
+            <div class="item category2">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+3" alt="Image 3">
+                <p>Category 2 - Item 1</p>
+            </div>
+            <div class="item category2">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+4" alt="Image 4">
+                <p>Category 2 - Item 2</p>
+            </div>
+
+            <!-- Category 3 Items -->
+            <div class="item category3">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+5" alt="Image 5">
+                <p>Category 3 - Item 1</p>
+            </div>
+            <div class="item category3">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+6" alt="Image 6">
+                <p>Category 3 - Item 2</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        $(document).ready(function () {
+            // Initialize Isotope
+            var $galleryContainer = $('.gallery').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows',
+                hiddenStyle: {
+                    opacity: 0,
+                    transform: 'scale(0.95)',
+                },
+                visibleStyle: {
+                    opacity: 1,
+                    transform: 'scale(1)',
+                },
+            });
+
+            // Filter items on button click
+            $('.button-group .button').on('click', function () {
+                // Update button active state
+                $('.button-group .button').removeClass('active');
+                $(this).addClass('active');
+
+                // Get filter value and apply
+                var filterValue = $(this).attr('data-filter');
+                $galleryContainer.isotope({ filter: filterValue });
+
+                // Update visibility classes
+                $galleryContainer.on('arrangeComplete', function () {
+                    $('.item').each(function () {
+                        if ($(this).is(':visible')) {
+                            $(this).addClass('is-visible');
+                        } else {
+                            $(this).removeClass('is-visible');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

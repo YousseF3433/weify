@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .video-container {
+      position: relative;
+      width: 640px;
+      max-width: 100%;
+      background: #000;
+    }
+
+    video {
+      width: 100%;
+      display: block;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px;
+    }
+
+    .controls button {
+      background: #444;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .controls button:hover {
+      background: #555;
+    }
+
+    .progress-bar {
+      flex: 1;
+      height: 5px;
+      margin: 0 10px;
+      background: #444;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .progress-bar div {
+      width: 0;
+      height: 100%;
+      background: #f90;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video id="video" src="assets/care.mp4"></video>
+
+    <div class="controls">
+      <button id="playPauseBtn">Play</button>
+      <div class="progress-bar" id="progressBar">
+        <div></div>
+      </div>
+      <button id="muteBtn">Mute</button>
+    </div>
+  </div>
+
+  <script>
+    // Get elements
+    const video = document.getElementById("video");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+    const muteBtn = document.getElementById("muteBtn");
+    const progressBar = document.getElementById("progressBar");
+    const progressFill = progressBar.querySelector("div");
+
+    // Play or Pause the Video
+    playPauseBtn.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = "Pause";
+      } else {
+        video.pause();
+        playPauseBtn.textContent = "Play";
+      }
+    });
+
+    // Mute or Unmute the Video
+    muteBtn.addEventListener("click", () => {
+      video.muted = !video.muted;
+      muteBtn.textContent = video.muted ? "Unmute" : "Mute";
+    });
+
+    // Update Progress Bar
+    video.addEventListener("timeupdate", () => {
+      const progress = (video.currentTime / video.duration) * 100;
+      progressFill.style.width = `${progress}%`;
+    });
+
+    // Seek Video
+    progressBar.addEventListener("click", (e) => {
+      const barWidth = progressBar.offsetWidth;
+      const clickX = e.offsetX;
+      const newTime = (clickX / barWidth) * video.duration;
+      video.currentTime = newTime;
+    });
+  </script>
+</body>
+</html>

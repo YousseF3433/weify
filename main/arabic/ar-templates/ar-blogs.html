@@ -1,0 +1,86 @@
+{% extends "ar-layout.html" %}
+{% block content %}
+  <main class="main-wrapper relative overflow-hidden">
+        <section id="section-breadcrumb" style="direction: ltr">
+            <div class="breadcrumb-wrapper">
+                <div class="global-container">
+                    <div class="breadcrumb-block">
+                        <h1 class="breadcrumb-title">مقلتنا</h1>
+                        <ul class="breadcrumb-nav">
+                            <li><a href='index'>البيت</a></li>
+                            <li>مقلتنا</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section">
+                <div class="global-container">
+                        {% if blogs %}
+                          <div class="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {% for blog in blogs %}
+                                <li
+                                    class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
+                                    <a class='block overflow-hidden' href='{{ url_for("ar.blog", id=blog.id) }}'>
+                                        <img src="{{ url_for('static', filename=blog.photo) }}" alt="blog-main-1" width="856"
+                                            height="400"
+                                            class="h-auto w-full scale-100 transition-all duration-300 group-hover:scale-105" />
+                                    </a>
+                                    <div class="border border-[#EAEDF0] p-[30px]">
+                                        <ul class="flex flex-wrap items-center gap-6">
+                                            <li
+                                                class="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
+                                                <a class='hover:text-colorOrangyRed' href='{{ url_for("ar.blog", id=blog.id) }}'>{{ blog.date }}</a>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3 mt-7 hover:text-colorOrangyRed">
+                                            <a href='{{ url_for("blog", id=blog.id) }}'>{{ translation(blog.title) }}</a>
+                                        </h5>
+                                        <p class="mb-7 line-clamp-2 last:mb-0">
+                                            {{ translation(blog.shor_description) }}
+                                        </p>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <nav style="margin-bottom: 100px;" class="jos flex justify-center" data-jos_animation="fade">
+                                <ul class="flex gap-x-[15px]" style="direction: ltr;">
+                                    <li>
+                                        {% if page > 0 %}
+                                        <a href="?page={{ page - 1 }}"
+                                            class="group flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white active:bg-black">
+                                            <img src="assets/img/th-1/icon-black-cheveron-left.svg" alt="icon-black-cheveron-left" class="h-6 w-6 opacity-100 group-hover:opacity-0" />
+                                            <img src="assets/img/th-1/icon-white-cheveron-left.svg" alt="icon-white-cheveron-left"
+                                                class="absolute h-6 w-6 opacity-0 group-hover:opacity-100" />
+                                        </a>
+                                        {% endif %}
+                                    </li>
+                                    <li>
+                                        <a href="#" class="group flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white">{{ page + 1 }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="?page={{ page + 1 }}"
+                                            class="group flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white">
+                                            <img src="assets/img/th-1/icon-black-cheveron-right.svg" alt="icon-black-cheveron-right" class="h-6 w-6 opacity-100 group-hover:opacity-0" />
+                                            <img src="assets/img/th-1/icon-white-cheveron-right.svg" alt="icon-white-cheveron-right"
+                                                class="absolute h-6 w-6 opacity-0 group-hover:opacity-100" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        {% else %}
+                    <div class="global-container">
+                        <div class="mx-auto max-w-[954px] text-center" style="margin-bottom: 100px;">
+                            <h2 class="mb-[50px]">
+                                لا يوجد مقلات في هذا الصفحه
+                            </h2>
+                            <a class='button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white' href='?page=0 '>الرجوع الي الصفحه الاولي</a>
+                        </div>
+                    </div>
+                        {% endif %}
+                </div>
+        </section>
+</main>
+{% endblock content %}

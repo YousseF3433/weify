@@ -1,0 +1,111 @@
+<footer id="footer-2" class="relative">
+    <div class="absolute -top-[77px] left-1/2 z-10 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-bottom-shape-1.svg)] bg-cover bg-center bg-no-repeat"></div>
+    <div class="relative z-[1] overflow-hidden bg-black text-white">
+        <div class="pb-10 pt-1 lg:pt-7 xl:pt-[68px]">
+            <div>
+                <div class="global-container">
+                    <div class="mx-auto mb-10 text-center md:mb-16 md:max-w-lg lg:mb-20 lg:max-w-xl xl:max-w-3xl">
+                        <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                            دعنا نبدأ واستمتع بقوة الويب
+                        </h2>
+                    </div>
+                    <form action="{{ url_for('form_phone') }}" method="post">
+                        <div class="relative mx-auto h-[60px] max-w-[500px]">
+                            <input type="text" name="phone-phone" placeholder="أدخل رقم هاتفك"
+                                class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-white bg-transparent px-[24px] pr-20 outline-none sm:pr-48"
+                                required />
+                                <input type="hidden" name="goto" value="{{ request.endpoint }}">
+                            <button type="submit"
+                                class="absolute right-[5px] top-[50%] inline-flex h-[50px] -translate-y-[50%] items-center gap-x-[10px] rounded-[50px] bg-colorViolet px-6 transition-all duration-300 hover:bg-colorOrangyRed">
+                                <span class="hidden sm:inline-block">ابدأ الآن</span>
+                                <img src="{{ url_for('static', filename='img/th-1/arrow-right-large.svg') }}" alt="newsletter" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-16 xl:mt-20 xxl:mt-[100px]">
+                <div class="global-container">
+                    <div class="grid gap-x-10 gap-y-[60px] sm:grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between lg:gap-x-20">
+                        <div class="flex flex-col gap-y-6" style="position: relative; top: -50px; width: 360px;">
+                            <h4 class="text-[21px] font-semibold capitalize text-white">
+                                <img src="{{ url_for('static', filename='img/webify-logo.png') }}" alt="webify logo" style="width: 200px;">
+                            </h4>
+                            <p style="color: white;">
+                                Webify هي شركة تصميم مواقع مصرية متخصصة في البرمجيات المخصصة، حلول الويب المبتكرة، وتطوير الووردبريس. يقدم فريقنا المتميز مواقع ويب مذهلة وسهلة الاستخدام تناسب احتياجات عملك، مما يضمن لك حضورًا احترافيًا على الإنترنت. ابدأ الآن وارفع علامتك التجارية مع Webify!
+                            </p>  
+                        </div>
+                        <div class="flex flex-col gap-y-6">
+                            <h4 class="text-[21px] font-semibold capitalize text-white font-clashDisplay">
+                                الصفحات الرئيسية
+                            </h4>
+                            <ul class="flex flex-col gap-y-[10px] capitalize">
+                                <li>
+                                    <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-normal' href='{{ url_for("ar.index") }}'>الرئيسية</a>
+                                </li>
+                                <li>
+                                    <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-normal' href='{{ url_for("ar.about") }}'>من نحن</a>
+                                </li>
+                                <li>
+                                    <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-normal' href='{{ url_for("ar.services") }}'>الخدمات</a>
+                                </li>
+                                <li>
+                                    <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-normal' href='{{ url_for("ar.pricing") }}'>الأسعار</a>
+                                </li>
+                                <li>
+                                    <a class='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-normal' href='{{ url_for("ar.contact") }}'>تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-y-6">
+                            <h4 class="text-[21px] font-semibold capitalize text-white font-clashDisplay">
+                                وسائل التواصل
+                            </h4>
+                            <ul class="flex flex-col gap-y-[15px] capitalize">
+                                <li>
+                                    <a href="http://www.facebook.com" class="group flex items-center gap-x-3">
+                                        <div class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                            <img src="{{ url_for('static', filename='img/th-1/facebook-icon-white.svg') }}" alt="facebook-icon-white" width="14" height="14" />
+                                        </div>
+                                        <span class="inline-block flex-1 font-normal">فيسبوك</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.twitter.com" class="group flex items-center gap-x-3">
+                                        <div class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                            <img src="{{ url_for('static', filename='img/tiktok.svg') }}" alt="twitter-icon-white" width="14" height="14" />
+                                        </div>
+                                        <span class="inline-block flex-1 font-normal">تيكنوك</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.instagram.com" class="group flex items-center gap-x-3">
+                                        <div class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                            <img src="{{ url_for('static', filename='img/th-1/instagram-icon-white.svg') }}" alt="instagram-icon-white" width="14" height="14" />
+                                        </div>
+                                        <span class="inline-block flex-1 font-normal">إنستغرام</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com" class="group flex items-center gap-x-3">
+                                        <div class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                            <img src="{{ url_for('static', filename='img/th-1/linkedin-icon-white.svg') }}" alt="linkedin-icon-white" width="14" height="14" />
+                                        </div>
+                                        <span class="inline-block flex-1 font-normal">لينكد إن</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="global-container">
+                <div class="mb-10 mt-[60px] h-[1px] w-full bg-white"></div>
+            </div>
+            <div>
+               <p class="text-center">جميع حقوق محفوظة © <span style="color: #cacacaa3;">ويب</span><span style="color: #428cad;">فاي</span></p>
+            </div>
+            <div class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]"></div>
+        </div>
+    </div>
+</footer>

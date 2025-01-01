@@ -1,0 +1,98 @@
+{% extends "ar-layout.html" %}
+{% block content %}  
+        <main class="main-wrapper relative overflow-hidden">
+            <section id="section-breadcrumb" style="direction: ltr;">
+                <div class="breadcrumb-wrapper">
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">سابقه اعملنا</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href='/'>البيت</a></li>
+                                <li>سابقه اعملنا</li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div> 
+            </section> 
+            <section id="portfolio-section">
+                <div class="pb-40 xl:pb-[220px]">
+                    <div class="global-container">
+                        <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
+                            <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
+                                <h2 class="font-clashDisplay font-medium">واحده من احسن سوابق الاعمال في مصر</h2>
+                            </div>
+                        </div>
+                        <style>
+                            .active {
+                                background-color: #321ca4;
+                            }
+                            @media (max-width: 580px) {
+                                .button-group {
+                                  display: table !important;
+                                  padding: 10px 0 !important;
+                                }
+                                .button-group button {
+                                  margin: 5px;
+                                }
+                            }
+                        </style>
+                        <div class="button-group" style="display: flex;justify-content: center;padding: 10px; gap: 20px;">
+                            <button data-filter="*" class="button active rounded-[50px] border-none bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left">الجميع</button>
+                            {% for cat in cats %}
+                                <button data-filter=".{{ cat.value }}" class="button rounded-[50px] border-none bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left">{{ translation(cat.name) }}</button>
+                            {% endfor %}
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                            {% for por in pors %}      
+                            <div class="{{ por.filter }}">
+                                <div class="rounded-[20px] bg-[#321ca4] p-[20px] item {{ por.filter }}" data-jos_animation="flip" data-jos_delay="0.1" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+                                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xxl:h-[400px]">
+                                         <img src="{{ url_for('static', filename=por.img_src) }}">
+                                    </div>
+                                    <div class="mt-5">
+                                        <a class="font-clashDisplay text-[26px] leading-[1.33] hover:text-colorOrangyRed xxl:text-[30px] text-white" href="{{ por.url }}">
+                                            {{ translation(por.title) }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>  
+                </div> 
+            </section>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+            <script type="text/javascript">            
+            var all = [{% for cat in cats %}"{{ cat.value }}"{% if not loop.last %}, {% endif %}{% endfor %}];
+            var $galleryContainer = $('.gallery').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
+            })
+    
+            $('.button-group .button').on('click', function(){
+                $('.button-group .button').removeClass('active');
+                $(this).addClass('active');
+                var value = $(this).attr('data-filter');
+                if (value !== "*") {
+                    for (let i = 0; i < all.length; i++) {
+                        if ("." + all[i] !== value) {
+                            $("." + all[i]).css("display", "none")
+                        }
+                        else {
+                            $("." + all[i]).css("display", "block")
+                        }
+                    }
+                }
+                else {
+                    for (let i = 0; i < all.length; i++) {
+                        $("." + all[i]).css("display", "block")
+                    }
+                }
+                console.log(value)
+                $galleryContainer.isotope({
+                    filter: value 
+                })
+            })
+            </script>
+        </main> 
+{% endblock content %}  

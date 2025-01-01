@@ -1,0 +1,873 @@
+{% extends "ar-layout.html" %}
+{% block content %}  
+<style>
+.active-box {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0, 0, 0, var(--tw-bg-opacity)); 
+}
+
+.active-box * {
+    --tw-bg-opacity: 1;
+    color: rgb(255, 255, 255, var(--tw-text-opacity));
+    border-color: #140075;
+  }
+
+.active-box .group-hover\:opacity-100 {
+      opacity: 1;
+  }
+</style>
+<main class="main-wrapper relative overflow-hidden">
+    <section id="section-breadcrumb" style="direction: ltr;"> 
+        <div class="breadcrumb-wrapper"> 
+            <div class="global-container">
+                <div class="breadcrumb-block">
+                    <h1 class="breadcrumb-title">اسعرنا</h1>
+                    <ul class="breadcrumb-nav">
+                        <li><a href='/'>البيت</a></li>
+                        <li>اسعرنا</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-section">
+        <div class="pb-20 xl:pb-[150px]">
+            <div class="global-container">
+                <div class="jos mb-10 text-center lg:mb-12">
+                    <div class="mx-auto max-w-md lg:max-w-3xl xl:max-w-[950px]">
+                        <h2>اعثر على افضل خطة تناسب عملك</h2>
+                        <h5>(بدون رسوم مخفية)</h5>
+                    </div>
+                </div>
+                <div class="container mx-auto">
+                    <div class="jos flex justify-center" data-jos_delay="0.3" style="direction: ltr;">
+                        <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
+                            <a href="#wp">
+                                <button class="tab-button price-button active" id="wp" data-tab="monthly">
+                                    ووردبريسس
+                                </button>
+                            </a>
+                            <a href="#cc">
+                                <button class="tab-button price-button" id="cc" data-tab="annually">
+                                  (نيثف) كود خاص
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-16 xl:mt-20">
+                        <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4"> 
+                            <li id="wp-limited" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0" style="background: linear-gradient(to top, #0099ff73, #86ff6182, #ff000078);">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    عرض محدود
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    25$<span class="text-lg font-semibold">مرة واحدة</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    خيار ممتاز للأفراد والشركات الصغيرة الذين بدأوا للتو.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تحضير البيانات للذكاء الاصطناعي
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        هندسة الميزات
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نماذج التصنيف
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نماذج الانحدار
+                                    </li> 
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/info.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/info-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نماذج الانحدار
+                                    </li> 
+                                    <br>
+                                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (wordpress limited offer)'>اطلب الأن</a>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                            <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        <p>15$ نص إضافي</p>  
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li id="wp-Basic" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    أساسي
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $60<span class="text-lg font-semibold">مرة واحدة</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    هذا الخيار ممتاز لمواقع البورتفوليو.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        استضافة لمدة سنة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        رابط خاص (نطاق .COM)
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        شهادة أمان SSL - HTTPS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        أربع صفحات احترافية.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        يمكنك إضافة المزيد من الصفحات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تحسين محركات البحث (SEO).
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم متجاوب.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        الموقع بلغة واحدة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        بريد إلكتروني بنطاقك.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        دعم فني لمدة سنة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        رمز QR لموقعك.
+                                    </li>
+                                    <br>
+                                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=أريد%20طلب%20هذا%20الخيار'>
+                                        اطلب الآن
+                                    </a>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                            <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        <p>15$ نص إضافي</p>  
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li id="wp-Professional" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                   الباقه الاحترافيه
+                                </h3> 
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $89<span class="text-lg font-semibold">مره واحده</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                   هذي الحطه مناسبه للمواقع التجاره الالكرونيه الصغيره
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            جميع الميزات في خطة الأساس.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            موقع WooCommerce.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            5:9 صفحات احترافية.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            لوحة تحكم سهلة الاستخدام.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            يمكن إضافة، تعديل وحذف عدد غير محدود من المنتجات.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            لا يوجد حد لعدد المنتجات.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            لا يوجد عمولة على المبيعات.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            القسائم وخصومات.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            مقاطع فيديو تعليمية لإدارة متجرك.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            وأكثر لا تنسى أن تسألنا عن ذلك.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            دردشة مباشرة من Webify.
+                                        </li>
+                                      <br>
+                                    <a class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white" href="#">
+                                        اطلب الأن
+                                    </a>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                            <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        <p>15$ نص إضافي</p>  
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li id="wp-Vip" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    قادم قريبًا
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $$$<span class="text-lg font-semibold">مرة واحدة</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    مثالي للتعامل مع المشاريع المعقدة، التطبيقات المؤسسية، والمواقع الإلكترونية.
+                                </p>
+                                <ul class="mb-10 flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        جميع المميزات في خطة المحترفين.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        موقع متعدد الصفحات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تطبيق أندرويد.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تطبيق iOS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نشر التطبيق على متجر Google Play.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نشر التطبيق على متجر Apple.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم أيقونة + شعار للتطبيق.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تحسين SEO بالكامل.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        كود QR لتحميل التطبيق.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        موقع متعدد اللغات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        دعم فني للتطبيق والموقع.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم فريد من نوعه يناسب رغبات العميل.
+                                    </li>
+                                    <br>
+                                    <a class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white" href="#">
+                                        اطلب الأن
+                                    </a>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                            <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        <p>15$ نص إضافي</p>  
+                                    </li> 
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4"> 
+                            <li id="native-basic" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                   الباقه الأساسي
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $240<span class="text-lg font-semibold">مره واحده</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    هذا خيار ممتاز للشركات الصغيرة والأعمال التي تبدأ.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        موقع بتقنية حديثة (Flask، Jquery، Tailwind، ORM).
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        استضافة لمدة سنة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        رابط مخصص (دومين .COM).
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        شهادة SSL - HTTPS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        4:6 صفحات فريدة واحترافية.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تحسين محركات البحث (SEO) مدمج.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم مستجيب بالكامل.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        اختر من بين العديد من القوالب.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        خصائص امان مططوره.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        الموقع بلغة واحدة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        واجهة مستخدم/تجربة مستخدم احترافية.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        بريد إلكتروني رسمي باستخدام الدومين الخاص بك.   
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        دعم فني لمدة سنة.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        رمز QR لموقعك.
+                                    </li> <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (native Basic)'>اطلب الأن</a>
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                          <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                          <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                      تجدد سنويا ب 40 دولار
+                                        </li>
+                                  </ul>
+                            </li> 
+                            <li id="native-professional" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    الباقه الاحترافيه
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $960<span class="text-lg font-semibold">مره واحده</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    مثالي لإدارة متاجر التجارة الإلكترونية الاحترافية للشركات المتوسطة والكبيرة.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        حميع المذايه في الخطه الاساسيه.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        5:9 صفخات احترافيه.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        متواجب مع جميع الاجهزه بشكل احترافي.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        حمايه مططوره ضد هجمات (xss, sql injaction, crfs and more).
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        عدد غير محدود من المنتجات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        لوحه ادمين احترافيه وسهله.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم مميز لصفحت الشراء.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم مميز انيق لصفحت المتجر.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        إشعارات في الوقت الفعلي.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        بنية تحتية قابلة للتطوير.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        بدون عمولات على المبيعات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        فيديوهات تعليمية لإدارة متجرك.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        والمزيد، لا تنسَ أن تسأل عن.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        دردشة Webify المباشرة.
+                                    </li>
+                                    <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (native-Professional)'>اطلب الأن</a>
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                          <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                          <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تجدد سنويا ب 40 دولار
+                                        </li>
+                                  </ul>
+                            </li> 
+                            <li id="wp-Vip" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    قادم قريبًا
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $$$<span class="text-lg font-semibold">مرة واحدة</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    مثالي للتعامل مع المشاريع المعقدة، التطبيقات المؤسسية، والمواقع الإلكترونية.
+                                </p>
+                                <ul class="mb-10 flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        جميع المميزات في خطة المحترفين.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        موقع متعدد الصفحات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تطبيق أندرويد.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تطبيق iOS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نشر التطبيق على متجر Google Play.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        نشر التطبيق على متجر Apple.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم أيقونة + شعار للتطبيق.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تحسين SEO بالكامل.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="أيقونة تحقق" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        كود QR لتحميل التطبيق.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        موقع متعدد اللغات.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        دعم فني للتطبيق والموقع.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="أيقونة هدية" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="أيقونة هدية" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        تصميم فريد من نوعه يناسب رغبات العميل.
+                                    </li>
+                                    <br>
+                                    <a class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white" href="#">
+                                        اطلب الأن
+                                    </a>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                            <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        <p>تجدد سنويا ب 40 دولار</p>  
+                                    </li> 
+                                </ul>
+                            </li>
+                       </ul>
+                       <script>
+                        var active = "{{ active }}";
+                        var mode = window.location.hash.substring(1);
+                        if (mode == "cc") {
+                          $("#cc").addClass("active");
+                          $("#wp").removeClass("active");
+                          $("#monthly").addClass("hidden");
+                          $("#annually").removeClass("hidden");
+                        }
+                        $("#"+active).addClass("active-box");
+                      </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="pb-40 xl:pb-[200px]">
+            <div class="global-container">
+                <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                    <div class="jos flex flex-col" data-jos_animation="fade-right" style="padding-left: 10px;">
+                        <div class="mb-8 text-left lg:mb-16 xl:mb-6">
+                            <div class="mx-auto md:mx-0 md:max-w-none">
+                                <h2 style="text-align: right" class="font-clashDisplay">اسألنا بحرية عن أي معلومات إضافية</h2>
+                            </div>
+                        </div>
+                        <div class="text-lg leading-[1.4] lg:text-[21px]">
+                            <p class="mb-7 last:mb-0" style="text-align: right">
+                                في Webify، تم تصميم حلولنا للتنفيذ السريع، مما يتيح لك الاستفادة منها دون الحاجة إلى فترات إعداد أو تطوير طويلة. نحن ندرك الطبيعة السريعة للصناعات الحديثة. لا تتردد في التواصل معنا للحصول على المزيد من المعلومات.
+                            </p>
+                            <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white' href='faq'>
+                                المزيد من الاسأله الشائعه
+                            </a>
+                        </div>
+                    </div>
+                    <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left">
+                        <ul class="accordion">
+                            <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                <div class="accordion-header flex items-center justify-between text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                    <p>ما هو الووردبريس؟</p>
+                                    <div class="accordion-icon">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                    <p>
+                                        الووردبريس هو أداة شائعة لإنشاء المواقع الإلكترونية. إنه سهل الاستخدام ولا يتطلب أي مهارات برمجية. يمكنك استخدامه لإنشاء أي شيء، بدءًا من المدونات البسيطة وحتى متاجر التجارة الإلكترونية الكاملة.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                <div class="accordion-header flex items-center justify-between text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                    <p>لماذا تختار موقعًا مبرمجًا أصليًا بدلًا من الووردبريس؟</p>
+                                    <div class="accordion-icon">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                    <p>
+                                        على الرغم من أن الووردبريس يُعتبر حلاً فعالاً من حيث التكلفة لإنشاء المواقع، إلا أن هناك عدة أسباب تجعل الاستثمار في موقع مبرمج أصليًا خيارًا أفضل: <br >
+                                        1. حلول مخصصة <br >
+                                        2. الأداء <br >
+                                        3. قابلية التوسع <br >
+                                        4. الأمان <br >
+                                        5. تصميم فريد <br >
+                                        6. تحكم أفضل <br >
+                                        7. الدعم والصيانة <br >
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                <div class="accordion-header flex items-center justify-between text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                    <p>هل يمكن إضافة المزيد من الميزات إلى موقعي؟</p>
+                                    <div class="accordion-icon">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                    <p>
+                                        بالتأكيد يمكنك إضافة المزيد من الميزات إلى موقعك! ومع ذلك، يرجى ملاحظة أن الميزات الإضافية قد تتطلب تكاليف إضافية. إذا كنت مهتمًا، يمكننا مناقشة التحسينات التي ترغب فيها وتقديم عرض سعر مفصل.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

@@ -1,0 +1,74 @@
+<script>
+    function change_lang() {
+        const currentPath = window.location.pathname;
+        if (!currentPath.startsWith('/ar/')) {
+            const newPath = '/ar' + currentPath;
+            window.location.href = newPath;
+        }
+    }
+</script>
+<header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+        <div class="global-container">
+            <div class="flex items-center justify-between gap-x-8">
+                <a class href='{{ url_for("index") }}'>
+                    <img src="{{ url_for('static', filename='img/webify-logo.png') }}" alt="WEBIFY" width="96" height="24" />
+                </a>
+                <div class="menu-block-wrapper">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu-block" id="append-menu-header">
+                        <div class="mobile-menu-head">
+                            <div class="go-back">
+                                <img class="dropdown-icon" src="{{ url_for('static', filename='img/icon-black-long-arrow-right.svg') }}"
+                                    alt="cheveron-right" width="16" height="16" />
+                            </div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="site-menu-main is-text-white">
+                            <li class="nav-item">
+                                <a class='nav-link-item' href='{{ url_for("index") }}'>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class='nav-link-item' href='{{ url_for("about") }}'>About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class='nav-link-item' href='{{ url_for("services") }}'>Services</a>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a href="#" class="nav-link-item drop-trigger">Pages
+                                    <img class="dropdown-icon" src="{{ url_for('static', filename='img/icon-black-cheveron-right.svg') }}"
+                                        alt="cheveron-right" width="16" height="16" /></a>
+                                <ul class="sub-menu" id="submenu-3">
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="{{ url_for('blogs') }}" data-menu-get="h3" class="drop-trigger">Blogs</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{{ url_for('faq') }}" data-menu-get="h3" class="drop-trigger">FAQ</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{{ url_for('portfolio') }}" data-menu-get="h3" class="drop-trigger">Portfolio
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a class='drop-trigger' data-menu-get='h3' href='{{ url_for("pricing") }}'>Pricing
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class='nav-link-item' href='{{ url_for("contact") }}'>Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class='button rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left' href="#" onclick="change_lang()">AR</a>
+                    <div class="block lg:hidden">
+                        <button class="mobile-menu-trigger is-white">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>

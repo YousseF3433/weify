@@ -1,0 +1,860 @@
+{% extends "layout.html" %}
+{% block content %}  
+<style>
+.active-box {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0, 0, 0, var(--tw-bg-opacity)); 
+}
+
+.active-box * {
+    --tw-bg-opacity: 1;
+    color: rgb(255, 255, 255, var(--tw-text-opacity));
+    border-color: #140075;
+  }
+
+.active-box .group-hover\:opacity-100 {
+      opacity: 1;
+  }
+</style>
+<main class="main-wrapper relative overflow-hidden">
+    <section id="section-breadcrumb"> 
+        <div class="breadcrumb-wrapper"> 
+            <div class="global-container">
+                <div class="breadcrumb-block">
+                    <h1 class="breadcrumb-title">Pricing Plans</h1>
+                    <ul class="breadcrumb-nav">
+                        <li><a href='/'>Home</a></li>
+                        <li>Pricing Plans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-section">
+        <div class="pb-20 xl:pb-[150px]">
+            <div class="global-container">
+                <div class="jos mb-10 text-center lg:mb-12">
+                    <div class="mx-auto max-w-md lg:max-w-3xl xl:max-w-[950px]">
+                        <h2>Find a flexible plan that fits your business</h2>
+                        <h5>(No hidden fees)</h5>
+                    </div>
+                </div>
+                <div class="container mx-auto">
+                    <div class="jos flex justify-center" data-jos_delay="0.3">
+                        <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
+                            <a href="#wp">
+                            <button class="tab-button price-button active" id="wp" data-tab="monthly">
+                                wordpress
+                            </button>
+                            </a>
+                            <a href="#cc">
+                            <button class="tab-button price-button" id="cc" data-tab="annually">
+                               native
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-16 xl:mt-20">
+                        <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4"> 
+                              <li id="wp-limited" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0" style="background: linear-gradient(to top, #0099ff73, #86ff6182, #ff000078);">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                   limited offer 
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $25<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    This is an excellent option for people & small
+                                    businesses who are starting out.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        AI-Ready Data Prep
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Feature Engineering
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Classification Models
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Regression Models
+                                    </li> 
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                      <div class="relative h-[24px] w-[24px]">
+                                          <img src="assets/img/th-1/info.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                          <img src="assets/img/th-1/info-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                      </div>
+                                      Regression Models
+                                  </li> 
+                                  <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (wordpress limited offer)'>Choose the plan</a>
+                              <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                              <div class="relative h-[24px] w-[24px]">
+                                <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                              </div>
+                              <p>15$ some text</p>  
+                              </li> 
+                              </ul>
+                              </li>
+                               <li id="wp-Basic" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Basic
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $60<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    This is an excellent option for portfolios website.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Hosting for a year.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Special link (domain .COM)
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        SSL security certificate - HTTPS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        four professional pages.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        You can add more pages.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        SEO optimization.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Responsive Design.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Site in one language.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Email with your domain.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Tech support for a year.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        QR code for your site.
+                                    </li>
+                                  <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (wordpress basic)'>Choose the plan</a> 
+                              <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                              <div class="relative h-[24px] w-[24px]">
+                                <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                              </div>
+                              <p>Renews annually for $40.</p>  
+                              </li> 
+                            </ul>
+                              </li> 
+                               <li id="wp-Professional" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                   Professional
+                                </h3> 
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $89<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    This plan is suitable for e-commerce stores.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            All feature in Basic plane.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Woocommerce site.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            5:9 professional pages.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Easy to use admin panel.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Can add, edit and deleteun limited number of productes.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            No limmet for productes number.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            No sales commission.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Vouchers and discount coupons.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Color and size options for the product.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            learning videos to mangement your shop.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            And more don't forget to ask about.
+                                        </li>
+                                        <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                            <div class="relative h-[24px] w-[24px]">
+                                                <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Webify live Chat.
+                                        </li>
+                                      <br>
+                                    <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (wordpress Professional)'>Choose the plan</a> 
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                  <div class="relative h-[24px] w-[24px]">
+                                    <img src="assets/img/server.svg" alt="icon-black-badge-check" width="15" height="15" class="h-full w-full object-cover" />
+                                    <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="15" height="15" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                  </div>
+                                  Renews annually for $40.
+                                  </li> 
+                                </ul>
+                            </li> 
+                               <li id="wp-Vip" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Comming soon
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $$$<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Ideal for handling complicated projects enterprise-level
+                                    apps, and websites.
+                                </p>
+                                <ul class="mb-10 flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        All feature in Professional plane.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Multi pages site.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Android app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Ios app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Publishing app to google play.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Publishing app to apple store.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Design icon + logo for app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Fully seo optimised.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        QR code for download app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Multi language site.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Technical support for app and site.
+                                    </li>
+                                  <br>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='#'>Choose the plan</a>
+                                      <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                            <div class="relative h-[24px] w-[24px]">
+                                              <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                              <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Renews annually for $40
+                                        </li>
+                                  </ul>
+                            </li>
+                        </ul>
+                        <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4"> 
+                            <li id="native-basic" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Basic
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $240<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    This is an excellent option for small companies &
+                                    businesses who are starting out.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Modern technology site (Flask, Jquery, Tailwind, ORM).
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Hosting for a year.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Special link (domain .COM)
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        SSL security certificate - HTTPS.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        4:6 unique and professional pages.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Built-In SEO Optimization
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Fully responsive Design.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Choose from multiple themes.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Advanced Security Features.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Site in one language.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Professional UI/UX. 
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Official Email with your domain.             
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Tech support for a year.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        QR code for your site.
+                                    </li> <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (native Basic)'>Choose the plan</a>
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                          <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                          <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Renews annually for $40
+                                        </li>
+                                  </ul>
+                            </li> 
+                            <li id="native-professional" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Professional
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $960<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Ideal for handling professional e-commerce stores for medium to large companies.
+                                </p>
+                                <ul class="flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        All feature in Basic plane.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        5:9 professional pages.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Fully Customizable Design
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Advanced Security Features.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Unlimited Product Listings
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Tailored Admin Panel
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Custom Checkout Process.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Custom shop page.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Real-Time Notifications
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Scalable Infrastructure.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        No sales commission.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        learning videos to mangement your shop.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        And more don't forget to ask about.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Webify live Chat.
+                                    </li>
+                                    <br>
+                                <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' target="_blank" href='https://wa.me/+201500312705?text=اريد ان اعرف المذيد عن هذا الخطه (native-Professional)'>Choose the plan</a>
+                                  <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                        <div class="relative h-[24px] w-[24px]">
+                                          <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                          <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Renews annually for $40
+                                        </li>
+                                  </ul>
+                            </li> 
+                            <li id="native-Vip" class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Comming soon
+                                </h3>
+                                <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                    $$$<span class="text-lg font-semibold">one time</span>
+                                </h4>
+                                <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                    Ideal for handling complicated projects enterprise-level
+                                    apps, and websites.
+                                </p>
+                                <ul class="mb-10 flex flex-col gap-y-3">
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        All feature in Professional plane.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Multi pages site.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Android app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Ios app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Publishing app to google play.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Publishing app to apple store.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Design icon + logo for app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Fully seo optimised.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/th-1/icon-black-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/th-1/icon-orange-badge-check.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        QR code for download app.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Multi language site.
+                                    </li>
+                                    <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                        <div class="relative h-[24px] w-[24px]">
+                                            <img src="assets/img/gift.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                            <img src="assets/img/gift-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                        </div>
+                                        Technical support for app and site.
+                                    </li>
+                                  <br>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='#'>Choose the plan</a>
+                                      <li class="flex items-center gap-x-3 font-bold group-hover:text-white center">
+                                            <div class="relative h-[24px] w-[24px]">
+                                              <img src="assets/img/server.svg" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                              <img src="assets/img/server-blue.svg" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                            </div>
+                                            Renews annually for $40
+                                        </li>
+                                  </ul>
+                            </li>
+                      </ul>
+                       <script>
+                        var active = "{{ active }}";
+                        var mode = window.location.hash.substring(1);
+                        if (mode == "cc") {
+                          $("#cc").addClass("active");
+                          $("#wp").removeClass("active");
+                          $("#monthly").addClass("hidden");
+                          $("#annually").removeClass("hidden");
+                        }
+                        $("#"+active).addClass("active-box");
+                      </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+                <div class="pb-40 xl:pb-[200px]">
+                    <div class="global-container">
+                        <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                            <div class="jos flex flex-col" data-jos_animation="fade-right">
+                                <div class="mb-8 text-left lg:mb-16 xl:mb-6">
+                                    <div class="mx-auto md:mx-0 md:max-w-none">
+                                        <h2>Freely ask us for more information</h2>
+                                    </div>
+                                </div>
+                                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                                    <p class="mb-7 last:mb-0">
+                                        At Webify, our solutions are designed for quick deployment, enabling you to start reaping the benefits without lengthy setup and development times. We understand the fast-paced nature of modern industries. Feel free to reach out for more information.
+                                    </p>
+                                    <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white' href='/faq'>Ask you questions</a>
+                                </div>
+                            </div>
+                            <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left">
+                                <ul class="accordion">
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                        <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>What is wordpress ?</p>
+                                            <div class="accordion-icon">
+                                                <img src="assets/img/plus.svg" alt="plus" />
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                            <p>
+                                                WordPress is a popular tool for creating websites. It’s easy to use and doesn’t require any coding skills. You can use it to build anything from simple blogs to full e-commerce stores.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                        <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>Why Choose a Native Site Over WordPress ?</p>
+                                            <div class="accordion-icon">
+                                                <img src="assets/img/plus.svg" alt="plus" />
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                            <p>
+                                                While WordPress is often seen as a cost-effective solution for building websites, there are several reasons to consider investing in a custom native site: <br >
+                                                1. Tailored Solutions <br >
+                                                2. Performance  <br > 
+                                                3. Scalability  <br >
+                                                4. Security  <br >
+                                                5. Unique Design  <br >
+                                                6. Better Control  <br >
+                                                7. Support and Maintenance  <br >
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                                        <div class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>Is it possible to add more features to my site?</p>
+                                            <div class="accordion-icon">
+                                                <img src="assets/img/plus.svg" alt="plus" />
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content disappear translate-y-3 text-lg leading-[1.66] text-[#2C2C2C]">
+                                            <p>
+                                                You can certainly add more features to your site! However, please note that additional features may come with increased costs. If you're interested, we can discuss the specific enhancements you have in mind and provide a detailed quote.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</main>
+{% endblock content %}  

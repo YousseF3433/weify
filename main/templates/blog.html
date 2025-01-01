@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+  <style>
+        .blog-section h1 {
+            font-size: 2rem !important;
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 500;
+        }
+        .blog-section h2 {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            font-family: DM Sans,sans-serif !important;
+        }
+  </style>
+  <main class="main-wrapper relative overflow-hidden">
+            <section id="section-breadcrumb">
+                <div class="breadcrumb-wrapper">
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">Blog</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href='../index'>Home</a></li>
+                                <li><a href='../blogs'>Blogs</a></li>
+                                <li>{{ blog.title }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            <div class="blog-section">
+                <div class="pb-40 xl:pb-[220px]">
+                    <div class="global-container">
+                            <div class="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
+                                <div class="flex flex-col gap-6">
+                                    <article class="jos overflow-hidden bg-white">
+                                        <div class="mb-7 block overflow-hidden rounded-[10px]">
+                                            <img src="{{ url_for('static', filename=blog.photo) }}"  class="h-70vh" alt="blog-main-1" width="856"
+                                                height="540" class="h-auto w-full scale-100 object-cover" />
+                                        </div>
+                                        <ul class="flex flex-wrap items-center gap-6">
+                                            <li
+                                                class="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
+                                                <a class='hover:text-colorOrangyRed' href='blog-details.html'>{{ blog.date }}</a>
+                                            </li>
+                                        </ul>
+                                        <h1 class="mb-3 mt-5">
+                                            {{ blog.title }}
+                                        </h1>
+                                        <p class="mb-7 last:mb-0">
+                                             {{ blog.description | safe }}
+                                        </p>
+                                        <p class="mb-7 last:mb-0">Thanks for reading ❤</p>
+                                    </article>  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock content %}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title %}
+      {{ title }}
+      {% else %}
+      webify
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ des }}"/>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}"/>
+
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}webify{% endif %}" />
+    <meta property="og:description" content="{{ des }}" />
+    <meta property="og:image" content="{{ url_for('static', filename='img/webify.png', _external=True) }}" />
+    <meta property="og:url" content="{{ request.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Webify" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}webify{% endif %}" />
+    <meta name="twitter:description" content="{{ des }}" />
+    <meta name="twitter:image" content="{{ url_for('static', filename='img/webify.png', _external=True) }}" />
+    <meta name="twitter:site" content="@webify" />
+    <meta name="twitter:creator" content="@webify" />
+
+    <link href="{{ url_for('static', filename='fonts/fonts.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendors/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendors/jos.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vendors/menu.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <style>
+      body {
+         overflow-x: hidden;
+      }
+      .cursor {
+          width: 10px;
+          height: 10px;
+          z-index: 99999999;
+          background-color: #1ebbee;
+          border-radius: 50%;
+          position: absolute;
+          pointer-events: none;
+          transform: translate(-50%, -50%);
+          transition: transform 0.1s ease;
+      }
+      ::selection {
+         background-color: #00000021; 
+         color: #1b0f5a; 
+      }
+  </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="page-wrapper relative z-[1] bg-white">
+      {% include "inc/header.html" %} 
+      {% block content %} {% endblock %}
+      {% include "inc/footer.html" %}
+    </div>
+    <script src="{{ url_for('static', filename='js/vendors/counterup.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendors/fslightbox.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendors/jos.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendors/menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        const cursor = document.querySelector('.cursor');
+        function updateCursorPosition(x, y) {
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y + window.scrollY}px`;
+        }
+        document.addEventListener('mousemove', (e) => {
+            updateCursorPosition(e.clientX, e.clientY);
+        });
+    </script>
+</body>
+</html>

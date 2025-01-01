@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webify Logo</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .icon {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border: 7px solid #00aaff;
+            margin-right: 10px;
+            border-radius: 1px;
+        }
+
+        .icon::before,
+        .icon::after {
+            content: '';
+            position: absolute;
+            background-color: #00aaff;
+        }
+
+        .icon::after {
+            height: 6px;
+            width: 65px;
+            top: 40%;
+            left: -22px;
+            transform: rotate(132deg);
+        }
+
+        .text {
+            color: white;
+        }
+
+        .text span {
+            color: #00aaff;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="icon"></div>
+        <div class="text">Web<span>ify</span></div>
+    </div>
+</body>
+</html>

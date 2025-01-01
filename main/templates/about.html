@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block content %}
+    <main class="main-wrapper relative overflow-hidden">
+        <section id="section-breadcrumb">
+            <div class="breadcrumb-wrapper" style="background-image: url('assets/img/bg-5.webp')">
+                <div class="global-container">
+                    <div class="breadcrumb-block">
+                        <h1 class="breadcrumb-title">About Us</h1>
+                        <ul class="breadcrumb-nav">
+                            <li><a href='index.html'>Home</a></li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-hero-section">
+            <div class="mb-20 lg:mb-24">
+                <div class="global-container">
+                    <div class="jos mb-10 text-center lg:mb-12 xl:mb-20">
+                        <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[950px]">
+                            <h2>We are a trusted partner in our clients' AI journey</h2>
+                        </div>
+                    </div>
+                    <div class="jos overflow-hidden rounded-3xl" data-jos_animation="zoom">
+                        <img src="assets/img/about-hero.jpg" alt="about-hero-image" width="1296"
+                            height="650" class="h-full w-full object-cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-funfact-section">
+            <div class="global-container">
+                <ul class="grid grid-cols-1 gap-10 gap-y-5 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4">
+                    <li class="jos" data-jos_delay="0.1">
+                        <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-[80px]"
+                            data-module="countup">
+                            <span class="start-number" data-countup-number="2">2</span>K+
+                        </h3>
+                        <span class="block text-lg font-normal text-black">Successful Implementations</span>
+                    </li>
+                    <li class="jos" data-jos_delay="0.2">
+                        <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-[80px]"
+                            data-module="countup">
+                            <span class="start-number" data-countup-number="95">95</span>%
+                        </h3>
+                        <span class="block text-lg font-normal text-black">Client Satisfaction Rate</span>
+                    </li>
+                    <li class="jos" data-jos_delay="0.3">
+                        <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-[80px]"
+                            data-module="countup">
+                            <span class="start-number" data-countup-number="40">40</span>+
+                        </h3>
+                        <span class="block text-lg font-normal text-black">Awards and Recognitions</span>
+                    </li>
+                    <li class="jos" data-jos_delay="0.4">
+                        <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-[80px]"
+                            data-module="countup">
+                            <span class="start-number" data-countup-number="73">73</span>+
+                        </h3>
+                        <span class="block text-lg font-normal text-black">Growth and Expansion</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="content-section-2">
+                <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+                    <div class="global-container">
+                        <div
+                            class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 xl:grid-cols-[minmax(0,_1.3fr)_1fr]">
+                            <div class="jos order-2 overflow-hidden rounded-md" data-jos_animation="fade-left">
+                                <img src="assets/img/webify.png" alt="content-image-2" width="526"
+                                    height="550" class="h-auto w-full" />
+                            </div>
+                            <div class="jos order-1" data-jos_animation="fade-right">
+                                <div class="mb-6">
+                                    <h2>About Webify</h2>
+                                </div>
+                                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                                    <p class="mb-7 last:mb-0">
+                                        Our Mission
+                                        At Webify, we aim to empower businesses by providing them with cutting-edge online solutions. We believe that a well-designed website is a powerful tool for growth, and we are committed to helping our clients succeed in the digital world.
+                                    </p>
+                                    <p class="mb-7 last:mb-0">
+                                        Webify is an innovative web design and software development company based in Egypt, founded in 2024. We specialize in creating custom solutions tailored to meet the unique needs of shop owners and small businesses. Whether it’s building from the ground up with native code or utilizing the flexibility of WordPress, we deliver high-quality, professional websites at affordable rates.
+                                    </p>
+                                    <a class='button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white' href='/contact'>Get
+                                        in touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+{% endblock content %}

@@ -1,0 +1,717 @@
+{% extends "ar-layout.html" %}
+{% block content %}
+     <style>
+         @media (min-width: 767px)  {
+            .hero-image {
+                 right: 60% !important;
+             }
+         }
+         .title {
+             text-align: right;
+         }
+         .description {
+             text-align: right;
+         }
+         .but-float-right {
+             float: right;
+         }
+     </style>
+     <link rel="stylesheet" href="assets/css/cmain.css">
+     <main class="main-wrapper relative overflow-hidden">
+            <section id="slider" class="hero p-0 odd" style="padding-bottom: 10px;">
+           <div class="swiper-container full-slider featured animation slider-h-100 swiper-container-initialized swiper-container-horizontal">
+             <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+               <div class="swiper-slide slide-center swiper-slide-active" style="width: 1349px;">
+                 <img 
+                   data-jos_animation="zoom-out-up" 
+                   data-jos_delay="800" 
+                   src="assets/img/hero-4.png" 
+                   class="hero-image jos" 
+                   alt="Hero Image"
+                 >
+                 <div class="slide-content row" data-mask-768="50">
+                   <div class="col-12 d-flex inner">
+                     <div class="left align-self-center text-center text-md-left init">
+                       <h1 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="400" 
+                         class="title effect-static-text jos"
+                       >
+                         معًا نحو<br>إبداع جديد
+                       </h1>
+                       <p 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="800" 
+                         class="description jos"
+                       >
+                         دعنا نحول أفكارك إلى واقع مميز ونحقق النجاح معًا بأفكار مبتكرة وحلول استثنائية.
+                       </p>
+                       <a 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="1200" 
+                         class="jos button rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left but-float-right" 
+                         href="#"
+                       >
+                         ابدأ الآن
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="swiper-slide slide-center swiper-slide-next" style="width: 1349px;">
+                 <img 
+                   data-jos_animation="zoom-out-up" 
+                   data-aos_delay="800" 
+                   src="assets/img/hero-5.jpg" 
+                   class="hero-image jos" 
+                   alt="Hero Image"
+                 >
+                 <div class="slide-content row" data-mask-768="50">
+                   <div class="col-12 d-flex inner">
+                     <div class="left align-self-center text-center text-md-left init">
+                       <h2 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="400" 
+                         class="title effect-static-text jos"
+                       >
+                         خطوة أقرب<br>للقمة
+                       </h2>
+                       <p 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="800" 
+                         class="description jos"
+                       >
+                         هل أنت جاهز للانطلاق؟ ثق بنا لتطوير هوية رقمية تجسد طموح شركتك وتلهم عملاءك.
+                       </p>
+                       <a 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="1200" 
+                         class="jos button rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left but-float-right" 
+                         href="#"
+                       >
+                         ابدأ الآن
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="swiper-slide slide-center" style="width: 1349px;">
+                 <img 
+                   data-jos_animation="zoom-out-up" 
+                   data-aos_delay="800" 
+                   src="assets/img/hero-6.jpg" 
+                   class="hero-image jos" 
+                   alt="Hero Image"
+                 >
+                 <div class="slide-content row" data-mask-768="50">
+                   <div class="col-12 d-flex inner">
+                     <div class="left align-self-center text-center text-md-left init">
+                       <h2 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="400" 
+                         class="title effect-static-text jos"
+                       >
+                         مصمم<br>للتفوق
+                       </h2>
+                       <p 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="800" 
+                         class="description jos"
+                       >
+                         نوفر لك حلولًا مبتكرة مصممة خصيصًا لتعزيز علامتك التجارية وتمكين نجاحها.
+                       </p>
+                       <a 
+                         data-jos_animation="zoom-out-up" 
+                         data-jos_delay="1200" 
+                         class="jos button rounded-[50px] border-none bg-colorViolet text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block buttom-margin-left but-float-right" 
+                         href="#"
+                       >
+                         ابدأ الآن
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div 
+               class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+             >
+               <span 
+                 class="swiper-pagination-bullet swiper-pagination-bullet-active" 
+                 tabindex="0" 
+                 role="button" 
+                 aria-label="Go to slide 1"
+               ></span>
+               <span 
+                 class="swiper-pagination-bullet" 
+                 tabindex="0" 
+                 role="button" 
+                 aria-label="Go to slide 2"
+               ></span>
+               <span 
+                 class="swiper-pagination-bullet" 
+                 tabindex="0" 
+                 role="button" 
+                 aria-label="Go to slide 3"
+               ></span>
+             </div>
+
+             <div 
+               class="absolute left-1/2 h-[77px] w-full -translate-x-1/2 bg-cover bg-center bg-no-repeat" 
+               style="bottom: -50px; background-image: url('assets/img/th-2/new.svg');"
+             ></div>
+           </div>
+            </section>
+            <section id="why">
+                <div class="pb-20 pt-1 xl:pb-[130px] xl:pt-[53px]">
+                    <div class="global-container">
+                        <div class="jos mb-10 text-right sm:mx-auto sm:text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
+                            <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                لماذا <span style="color: #000000a3;">ويب</span><span style="color: #009eff80;">فاي</span>؟
+                            </h2>
+                        </div>
+                        <ul class="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.1">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/icons/pricing.svg" alt="icon-feature-1" width="49" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        التسعير
+                                    </div>
+                                    <p class="font-normal">
+                                        صمم مواقع احترافي بأسعار تبدأ من 50 إلى 300 دولار، لتناسب ميزانيتك.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.2">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/icons/quality.svg" alt="icon-feature-2" width="45" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        الجودة
+                                    </div>
+                                    <p class="font-normal">
+                                        مواقعنا عالية الجودة متوافقة مع محركات البحث ومصممة لتعزيز الظهور وجذب الزوار.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.3">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/img/th-2/icon-feature-1.svg" alt="icon-feature-3" width="36" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        الدردشة المباشرة
+                                    </div>
+                                    <p class="font-normal">
+                                        لفترة محدودة، احصل على ميزة الدردشة المباشرة مجاناً مع أرخص خطة.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.4">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/img/th-2/icon-feature-3.svg" alt="icon-feature-3" width="36" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        الوقت
+                                    </div>
+                                    <p class="font-normal">
+                                        نقدر وقتك، لذلك يتم إنجاز المواقع خلال 3 إلى 14 يوماً لمواقع ووردبريس.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.5">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/icons/secure.svg" alt="icon-feature-3" width="36" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        الأمان
+                                    </div>
+                                    <p class="font-normal">
+                                        أمان بياناتك أولويتنا. مواقعنا مبنية بأعلى معايير الأمان لضمان راحت بالك.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.6">
+                                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <img src="assets/icons/support.svg" alt="icon-feature-3" width="36" height="45" />
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div class="font-clashDisplay text-[22px] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        الدعم الفني
+                                    </div>
+                                    <p class="font-normal">
+                                        احصل على عام كامل من الدعم الفني مع أي خطة تختارها. نحن هنا لمساعدتك!
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="global-container">
+                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
+            </div>
+            <section id="content-section-2">
+                <div class="pb-20 pt-20 md:pb-36 md:pt-32 lg:pb-28 xl:pb-[220px] xl:pt-[130px] xxl:pt-[200px]">
+                    <div class="global-container">
+                        <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
+                            <div class="order-2 mt-16 rounded-md md:mt-0 jos" data-jos_animation="fade-up" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+                                <div class="relative h-[494px] rounded-tl-[20px] rounded-tr-[20px] bg-[url('../img/th-2/content-shape.jpg')] bg-cover bg-no-repeat">
+                                    <img src="assets/img/th-2/content.png" alt="th2-content-img-2.png" width="320" height="564" class="absolute left-1/2 w-[320px] -translate-x-1/2" style="bottom: 17%;">
+                                </div>
+                            </div>
+                            <div class="order-1 jos" data-jos_animation="fade-right" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+                                <div class="mb-6">
+                                    <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                        تفتكر الشويال ميديا كفايه فعلا ؟
+                                    </h2>
+                                </div>
+                                <div class="text-lg leading-[1.66]">
+                                    <p class="mb-7 last:mb-0">
+                                        ممكن أي حد يكون عنده صفحة على الشوايل ميديا، لكن مش أي حد يقدر يكون عنده موقع إلكتروني خاص بيه. الموقع هو فرصتك لتمييز نفسك عن منافسينك، يعكس احترافيتك ويوفر لعملائك تجربة أفضل وأكثر ثقة.
+                                    </p>
+                                    <ul class="mt-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]">
+                                        <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="margin-right: 25px;">
+                                            هيميزك عن منفسينك
+                                        </li>
+                                        <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="margin-right: 25px;">
+                                            هيزود الثقه
+                                        </li>
+                                        <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="margin-right: 25px;">
+                                            هيظهر في نتايج البحث
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="content">
+             <div class="pb-20 md:pt-36 lg:pb-28 xl:pb-[220px]">
+                 <div class="global-container">
+                     <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_.8fr)_1fr] xl:gap-28 xxl:gap-[134px]">
+                         <div class="jos order-2 mt-16 rounded-md md:order-1 md:mt-0" data-jos_animation="fade-up">
+                             <div class="relative h-[494px] rounded-tl-[20px] rounded-tr-[20px] bg-[url('../img/th-2/content-shape.jpg')] bg-cover bg-no-repeat">
+                                 <img src="assets/img/th-2/content-img-2.png" alt="th2-content-img-1.png"
+                                     width="320" height="564"
+                                     class="absolute bottom-0 left-1/2 h-[564px] w-[320px] -translate-x-1/2" />
+                             </div>
+                         </div>
+                         <div class="jos order-1 md:order-2" data-jos_animation="fade-right">
+                             <div class="mb-6">
+                                 <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                     مفتاح نجاح موقعنا
+                                 </h2>
+                             </div>
+                             <div class="text-lg leading-[1.66]">
+                                 <p class="mb-7 last:mb-0">
+                                     يجمع موقعنا بين التصميم السهل الاستخدام، التكنولوجيا المتقدمة، والتفاعل السلس 
+                                     لتوفير تجربة استثنائية لكل زائر. نحن ملتزمون بتقديم خدمات عالية الجودة 
+                                     تجعلنا متميزين عن الآخرين.
+                                 </p>
+                                 <ul class="mt-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]" style="padding-right: 25px;">
+                                     <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="padding-top: 6px;">
+                                         تصفح سهل وتصميم بديهي
+                                     </li>
+                                     <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="padding-top: 6px;">
+                                         سريع وآمن
+                                     </li>
+                                     <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet" style="padding-top: 6px;">
+                                         مصمم حسب احتياجاتك
+                                     </li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            </section>
+            <section id="tech-stack">
+             <div class="relative z-[1] overflow-hidden bg-colorCodGray text-white">
+                 <div class="py-20 xl:py-[130px]">
+                     <div class="global-container">
+                         <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
+                             <div class="jos">
+                                 <div class="mb-6">
+                                     <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                         مجموعة تقنياتنا
+                                     </h2>
+                                 </div>
+                                 <p class="mb-7 last:mb-0">
+                                     تعرف على التقنيات التي نستخدمها لضمان أن يكون موقعك الإلكتروني بأفضل حالاته.<br>
+                                     وتشمل هذه:
+                                 </p>
+                                 <ul class="my-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]" style="padding-right: 25px;">
+                                     <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
+                                         الواجهة الأمامية
+                                     </li>
+                                     <li class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
+                                         الواجهة الخلفية
+                                     </li>
+                                 </ul>
+                                 <a href="{{ url_for('ar.portfolio') }}" class="button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">سابقه اعملنا
+                                     <img src="assets/img/th-2/icon-white-long-arrow-right.svg" alt="icon-white-long-arrow-right"/></a>
+                             </div>
+                             <div class="flex flex-col gap-6 overflow-hidden rounded-[30px] bg-gradient-to-t from-[rgba(255,255,255,.1)] to-[rgba(0,0,0,0.5)] py-[124px]" style="direction: ltr;">
+                                 <div class="horizontal-slide-from-left-to-right flex w-[1161px] gap-x-6">
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/js.svg" alt="icon-flat-color-discord" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/img/th-2/icon-flat-color-github.svg" alt="icon-flat-color-github" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/bootstrap.svg" alt="icon-flat-color-mailchamp" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/tailwind.svg" alt="icon-flat-color-messenger" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/python.svg" alt="icon-flat-color-skype" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/flask.svg" alt="icon-flat-color-slack" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/mysql.svg" alt="icon-flat-color-snapchat" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/wordpress.svg" alt="icon-flat-color-whatsapp" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/woo.svg" alt="icon-flat-color-zendesk" style="width: 50px;"/>
+                                     </div>
+                                 </div>
+                                 <div class="horizontal-slide-from-right-to-left flex w-[1161px] gap-x-6">
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/js.svg" alt="icon-flat-color-discord" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/img/th-2/icon-flat-color-github.svg" alt="icon-flat-color-github" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/bootstrap.svg" alt="icon-flat-color-mailchamp" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/tailwind.svg" alt="icon-flat-color-messenger" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/python.svg" alt="icon-flat-color-skype" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/flask.svg" alt="icon-flat-color-slack" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/mysql.svg" alt="icon-flat-color-snapchat" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/wordpress.svg" alt="icon-flat-color-whatsapp" style="width: 50px;"/>
+                                     </div>
+                                     <div class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
+                                         <img src="assets/logo/woo.svg" alt="icon-flat-color-zendesk" style="width: 50px;"/>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <section style="padding-top: 50px;">
+                     <div class="jos mx-5 rounded-[50px] bg-black px-[20px] py-20 sm:px-[50px] mb-[30px] xl:py-[130px]">
+                         <div class="global-container">
+                             <div class="mb-10 text-center lg:mb-12 xl:mb-20">
+                                 <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[745px]">
+                                     <h2 class="text-white">اخر اعملنا</h2>
+                                 </div>
+                             </div>
+                             <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-2">
+                                 {% for por in pors %}
+                                 <article class="jos group overflow-hidden rounded-[10px] bg-black shadow-[0_4px_80px_rgba(0,0,0,0.08)]" data-jos_delay="0.1">
+                                     <a class='block h-[320px] w-full overflow-hidden rounded-[30px]' href='{{ por.url }}' target="_blank">
+                                         <img src="{{ url_for('static', filename=por.photo) }}" alt="blog-main-1" width="416" height="320"
+                                             class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                                     </a>
+                                     <div class="p-6">
+                                         <h5 class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] text-white">
+                                             <a href="{{ por.url }}" target="_blank">{{ por.title }}</a>
+                                         </h5>
+                                     </div>
+                                 </article>
+                                 {% endfor %}
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+             </div>
+            </section>
+            <div class="global-container">
+                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
+            </div>
+            <section class="pricing">
+             <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+                 <div class="global-container">
+                     <div class="jos mb-10 text-center lg:mb-12">
+                         <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
+                             <h2 class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                 ابني أي برنامج بكفاءة من حيث التكلفة
+                             </h2>
+                         </div>
+                     </div>
+                     <div class="container mx-auto">
+                         <div class="jos flex justify-center" data-jos_animation="fade" style="direction: ltr;">
+                             <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
+                                 <button class="tab-button price-button active" data-tab="monthly">
+                                     مواقع تعرفه
+                                 </button>
+                                 <button class="tab-button price-button" data-tab="annually">
+                                     تجاره الإلكتروني
+                                 </button>
+                             </div>  
+                         </div>
+                         <div class="mt-12 lg:mt-16 xl:mt-20">
+                             <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-3">
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         الباقه الاساسيه
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $60<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         خيار ممتاز لمواقع الويب الخاصة بتعريف الشركات (بروتفولوي).
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='/ar/pricing?active=wp-Basic#wp'>مزيد من التفاصيل</a>
+                                 </li>
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         الباقه الاحترافيه
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $89<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         هذا الخيار مناسب لمتاجر التجارة الإلكترونية الصغيره التوسع.
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='/ar/pricing?active=wp-Professional#wp'>مزيد من التفاصيل</a>
+                                 </li>
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         قادم قريبًا
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $$$<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         مثالي لإدارة المشاريع المعقدة للمشاريع الكبرى.
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='#'>مزيد من التفاصيل</a>
+                                 </li>
+                             </ul> 
+                             <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-3">
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         الباقه الاساسيه
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $240<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         خيار ممتاز لمواقع للشركات المتوسطي والكبري.
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='/ar/pricing?active=native-basic#cc'>مزيد من التفاصيل</a>
+                                 </li>
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         الباقه الاحترافيه
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $450<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         مثالي للمتاجر اللكترونيه كبيره التوسع.
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='/ar/pricing?active=native-advanced#cc'>مزيد من التفاصيل</a>
+                                 </li>
+                                 <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                     <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         VIP
+                                     </h3>
+                                     <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                     <h4 class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                         $1500<span class="text-lg font-semibold">مرة واحدة</span>
+                                     </h4>
+                                     <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                         خيار مثالي للمشاريع الضخمة والتجارة الإلكترونية.
+                                     </p>
+                                     <a class='button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white' href='#'>مزيد من التفاصيل</a>
+                                 </li>
+                             </ul> 
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            </section>
+            <div class="global-container">
+                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
+            </div>
+            <div id="blog">
+              <div class="py-20 xl:py-[130px]">
+                 <div class="global-container">
+                     <div
+                         class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mx-0 lg:mb-20 lg:max-w-[636px] lg:text-right">
+                         <h2
+                             class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                             اخر مقلتنا
+                         </h2>
+                     </div>
+                     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                         {% for blog in blogs %}
+                         <article
+                             class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                             data-jos_delay="0.1">
+                             <a class='block w-full overflow-hidden rounded-[30px]' style="height: 250px;" href='/ar/blog/{{ blog.id }}'>
+                                 <img src="{{ url_for('static', filename=blog.photo) }}" alt="blog-main-1" width="416"
+                                     height="320"
+                                     class="h-full w-full scale-100 transition-all duration-300 group-hover:scale-105" />
+                             </a>
+                             <div class="p-6">
+                                 <h5
+                                     class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
+                                     <a href='/ar/blog/{{ blog.id }}'>
+                                         {{ translation(blog.title) }}</a>
+                                 </h5>
+                                 <div class="flex items-center justify-between gap-x-4">
+                                     <span style="font-weight: 500;">{{ blog.date }}</span>
+                                     <a class='h-[30px] w-[30px]' href='/ar/blog/{{ blog.id }}'>
+                                         <img src="assets/img/th-2/icon-blue-long-arrow-right.svg"
+                                             alt="icon-blue-long-arrow-right" width="30" height="30"
+                                             class="transition-all duration-300 group-hover:-rotate-45" />
+                                     </a>
+                                 </div>
+                             </div>
+                         </article>
+                         {% endfor %}
+                     </div>
+                 </div>
+             </div>
+            </div>
+            <section id="faq">
+                <div class="pb-40 xl:pb-[220px]">
+                    <div class="global-container">
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                الأسئلة الشائعة
+                            </h2>
+                        </div>
+                        <ul class="accordion flex flex-col gap-y-6">
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] active"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        ما هي الخدمات التي تقدمها Webify؟
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="إضافة" />
+                                        <img src="assets/img/plus-white.svg" alt="إضافة - أبيض" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        Webify متخصصة في تطوير المواقع المخصصة، حلول التجارة الإلكترونية، WordPress، ومواقع بروفايل الشركات.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        هل تقدمون تصاميم متوافقة مع الهواتف وجيده لل SEO ؟
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="إضافة" />
+                                        <img src="assets/img/plus-white.svg" alt="إضافة - أبيض" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        نعم، نحن نقدم تصاميم متجاوبة بالكامل ومتوافقة مع جميع الهواتف، مع التركيز على تحسين المواقع لمحركات البحث (SEO) لضمان أداء ممتاز في نتائج البحث.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        كم سيتغرق لبناء موقعي؟
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="إضافة" />
+                                        <img src="assets/img/plus-white.svg" alt="إضافة - أبيض" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        يعتمد الوقت على تعقيد المشروع. عادةً ما يستغرق إنشاء موقع WordPressمن 2 إلى 14 يومًا، بينما قد يستغرق موقع مخصص من 3 إلى 25 يومًا. سنقدم لك جدولًا زمنيًا دقيقًا بناءً على متطلبات مشروعك.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        هل تقدمون تدريبًا لإدارة المتاجر الإلكترونية بعد التسليم؟
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="إضافة" />
+                                        <img src="assets/img/plus-white.svg" alt="إضافة - أبيض" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        نعم، نوفر مقاطع فيديو تدريبية مخصصة للمتاجر الإلكترونية لمساعدتك في إدارة متجرك الإلكتروني بسهولة. تشمل هذه الفيديوهات مهام أساسية مثل تحديث المنتجات، إدارة المخزون، ومعالجة الطلبات. بالإضافة إلى ذلك، نقدم دعمًا تقنيًا لمساعدتك في حل أي تحديات أو استفسارات قد تواجهها أثناء إدارة متجرك.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        هل يمكنني ترقية موقعي لاحقًا؟
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="إضافة" />
+                                        <img src="assets/img/plus-white.svg" alt="إضافة - أبيض" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        نعم، بينما يتم بناء مواقعنا مع إمكانية التوسع في الاعتبار، يجب ملاحظة أن توسيع الميزات على موقع WordPress قد يكون تحديًا مع نمو نشاطك التجاري. لذلك، نوصي بالنظر في إنشاء موقع مخصص، مما يتيح توسعًا أكثر سلاسة وميزات مخصصة.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="assets/js/vendors/cmain.js"></script>
+{% endblock content %}
